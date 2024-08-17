@@ -9,7 +9,7 @@ signIn.addEventListener("submit", (event) => {
     event.preventDefault();
     if (email.value && password.value) {
         signInWithEmailAndPassword(auth, email.value, password.value)
-            .then((userCredential) => {
+            .then(() => {
                 window.open("home.html");
             })
             .catch((error) => {
